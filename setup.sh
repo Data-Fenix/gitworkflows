@@ -3,9 +3,9 @@
 if [ ! -d ".github/workflows" ]; then
 echo "Starting setup github actions workflow"
 mkdir -p .github/workflows/
-cp -f mlops-workflows/*.yml .github/workflows/
-cp -f mlops-workflows/*.toml .
-rm -rf mlops-workflows
+cp -f gitworkflows/*.yml .github/workflows/
+cp -f gitworkflows/*.toml .
+rm -rf gitworkflows
 echo "Setup completed"
 
 echo "Start pushing workflow to repository"
